@@ -9,118 +9,200 @@
 
 <body>
     <header>
-        <h1>
-            HTML and CSS Cheat Sheet
-        </h1>
-        <p class="center">
-            by Ben Wichser
-        </p>
-        <p class="left">
-            This is a reference sheet for HTML and CSS tags.  This will hopefully be both useful as a reference and also something that improves my HyperText Markup Language and Cascade Style Sheets skills.
-        </p>
+        <h1>HTML and CSS Cheat Sheet</h1>
+        <p class="center">by Ben Wichser</p>
+        <p class="left">This is a reference sheet for HTML and CSS tags.  This will hopefully be both useful as a reference and also something that improves my HyperText Markup Language and Cascade Style Sheets skills.</p>
         <nav>
             <ul>
                 <li>
-                    <a href = "#htmltextbasics">
-                    HTML Text Basics
-                    </a>
+                    <a href = "#htmltextbasics">HTML Text Basics</a>
                 </li>
-                <li>
-                    HTML Tables
-                </li>
-                <li>
-                    Semantic HTML
-                </li>
-                <li>
-                    HTML Forms
-                </li>
+                <li>HTML Tables</li>
+                <li>Semantic HTML</li>
+                <li>HTML Forms</li>
             </ul>
         </nav>
     </header>
     <section id="htmltextbasics">
-        <h2>
-            HTML Text Basics
-        </h2>
-        <p>
-        Here we have some basic HTML tags (commands).
-        </p>
-        <h3>
-            The Absolute Basics -- How to structure the beginning of a web page.
-        </h3>
-        <p>
-        Here are some basic HTML tags (commands).  These are the absolute basics required to create a web page.
-        </p>
+        <h2>HTML Text Basics</h2>
+        <p>Here we have some basic HTML tags (commands).</p>
+        <h3>The Absolute Basics -- How to structure the beginning of a web page.</h3>
+        <p>Here are some basic HTML tags (commands), required for outlining a document.  These are the absolute basics required to create a web page.</p>
         <ol>
-            <li> Every HTML document must begin with the tag <span class="code">&lt!DOCTYPE html&gt</span>.  Then all the actual HTML (tags and text) must go between a <span class="code"> &lthtml&gt</span> and a <span class="code">&lt/html&gt</span>. That is, the web page begins with a tag that describes the document type as HTML and a tag pair that contains all the actual HTML code and text.
-            </li>
-            <li>
-                As we saw in the first item, most tags come in pairs: one tag "opens" the environment we are using, and the next tag "closes" that environment.  There are exceptions to this pairing, but this pairing is the norm for HTML tags.  (In the first item, we saw this pairing when <span class="code"> &lthtml&gt </span> and <span class="code"> &lt/html&gt </span> were used as a pair.)
-            </li>
-            <li>
-                To make a comment in HTML, we use <span class="code">&lt!</span> to start the comment, and <span class="code">--&gt</span> to end a comment.  In HTML, comments do not automatically end at the end of a line.  It is generally good form to begin a comment with <span class="code">&lt!--</span>, but the two hyphens are not required for a comment.
-            </li>
+            <li> Every HTML document must begin with the tag <span class="code">&lt!DOCTYPE html&gt</span>.  Then all the actual HTML (tags and text) must go between a <span class="code"> &lthtml&gt</span> and a <span class="code">&lt/html&gt</span>. That is, the web page begins with a tag that describes the document type as HTML and a tag pair that contains all the actual HTML code and text.</li>
+            <li>As we saw in the first item, most tags come in pairs: one tag "opens" the environment we are using, and the next tag "closes" that environment.  There are exceptions to this pairing, but this pairing is the norm for HTML tags.  (In the first item, we saw this pairing when <span class="code"> &lthtml&gt </span> and <span class="code"> &lt/html&gt </span> were used as a pair.)</li>
+            <li>To make a comment in HTML, we use <span class="code">&lt!</span> to start the comment, and <span class="code">--&gt</span> to end a comment.  In HTML, comments do not automatically end at the end of a line.  It is generally good form to begin a comment with <span class="code">&lt!--</span>, but the two hyphens are not required for a comment.</li>
             <li> The <span class="code">&ltheader&gt</span> and <span class="code">&lt/header&gt</span> tag pair define the web page's header.  That is, they are meant to go around meta-information for the web page.  The content you place within this tag pair will not actually appear on your web page, but may help your page render in the way you desire.  The single most common use of the page header is for the <span class="code">&lttitle&gt</span> and <span class="code">&lt/title&gt</span> tag pair.  This title tag defines your web page title, for display in your browser window or tab title.
             </li>
-            <li>
-                The <span class="code">&ltbody&gt</span> and <span class="code">&lt/body&gt</span> tag pair define the body of your web page.  The text and HTML code you place in here will show up on your actual web page.
-            </li>
+            <li>The <span class="code">&ltbody&gt</span> and <span class="code">&lt/body&gt</span> tag pair define the body of your web page.  The text and HTML code you place in here will show up on your actual web page.</li>
         </ol>
-        <p>
-        The sample code below shows an extremely minimal web page, using the above HTML tags.
-        </p>
+        <p>The sample code below shows an extremely minimal web page, using the above HTML tags.</p>
         <div class="example">
-            <p>
-            &lt!DOCTYPE html&gt
-            </p>
-            <p>
-            &lthtml&gt
-            </p>
-            <p>
-            &nbsp &lthead&gt
-            </p>
-            <p>
-            &nbsp &nbsp  &lttitle&gt
-            </p>
-            <p>
-            &nbsp &nbsp &nbsp Simple Web Page
-            </p>
-            <p>
-            &nbsp &nbsp &lt/title&gt
-            </p>
-            <p>
-            &nbsp &nbsp &lt!-- This is a comment.  The title above puts "Simple Web Page" in the browser title bar or browser tab title. --&gt
-            </p>
-            <p>
-            &nbsp &lt/head&gt
-            </p>
-            <p>
-            &nbsp &ltbody&gt
-            </p>
-            <p>
-            &nbsp &nbsp This little bit of text goes on the actual web page.
-            </p>
-            <p>
-            &nbsp &nbsp &lt!-- This is another comment...
-            </p>
-            <p>
-            &nbsp &nbsp ...new line...still a comment...
-            </p>
-            <p>
-            &nbsp &nbsp ...still a comment...
-            </p>
-            <p>
-            &nbsp &nbsp ...comment ends here.  --&gt
-            </p>
-            <p>
-            &nbspj&lt/body&gt
-            </p>
-            <p>
-            &lt/html&gt
-            </p>
+            <p>&lt!DOCTYPE html&gt</p>
+            <p>&lthtml&gt</p>
+            <p class="indent1">&lthead&gt</p>
+            <p class="indent2">&lttitle&gt</p>
+            <p class="indent3">Simple Web Page</p>
+            <p class="indent2">&lt/title&gt</p>
+            <p class="indent2">&lt!-- This is a comment.  The title above puts "Simple Web Page" in the browser title bar or browser tab title. --&gt</p>
+            <p class="indent1">&lt/head&gt</p>
+            <p class="indent1">&ltbody&gt</p>
+            <p class="indent2">&ltp&gtThis little bit of text goes on the actual web page.&lt/p&gt</p>
+            <p class="indent2">&lt!-- This is another comment...</p>
+            <p class="indent2">...new line...still a comment...</p>
+            <p class="indent2">...still a comment...</p>
+            <p class="indent2">...comment ends here.  --&gt</p>
+            <p class="indent1">&lt/body&gt</p>
+            <p>&lt/html&gt</p>
         </div>
-        <p>
-            You may notice that there is some paired indenting in the example above.  The indenting is just a common style preference -- indenting is not required to make the HTML display accurately.  We can also notice that all of the tags in the example above come in pairs, except the initial tag ( <span class="code">&lt!DOCTYPE html&gt</span>) at the beginning of the document.
-        </p>
+        <p>You may notice that there is some paired indenting in the example above.  The indenting is just a common style preference -- indenting is not required to make the HTML display accurately.  We can also notice that all of the tags in the example above come in pairs, except the initial tag ( <span class="code">&lt!DOCTYPE html&gt</span>) at the beginning of the document.</p>
+        <h3>The most basic HTML tags.</h3>
+        <p>These are the most basic ways of laying out text on a web page.  The display of each of these can be altered in a variety of ways, but in this table they are presented here according to their defualt presentation.</p>
+        <table>
+            <tr>
+                <th style="width:10em;">Tag</th>
+                <th>Description</th>
+                <th>Example Code</th>
+                <th>Example Code Result</th>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">&ltp&gt</span> and <span class="code">&lt/p&gt</span>
+                </td>
+                <td>
+                    Paragraph.  Used to surround a paragraph of text.
+                </td>
+                <td class="examplecode">
+                    <p>&ltp&gtThis is a paragraph of text.  It could be just a simple phrase, or a long paragraph of great detail and nuance.&lt/p&gt</p>
+                </td>
+                <td>
+                    <p>This is a paragraph of text.  It could be just a simple phrase, or a long paragraph of great detail and nuance.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">&lth1&gt</span> and <span class="code">&lt/h1&gt</span>
+                </td>
+                <td>
+                    Heading, level 1.  Used for the most important headings.
+                </td>
+                <td class="examplecode">
+                    <p>&lth1&gtI Am A Very Important Heading!&lt/h1&gt</p>
+                </td>
+                <td>
+                    <h1> I Am A Very Important Heading!</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">&lth2&gt</span> and <span class="code">&lt/h2&gt</span>
+                </td>
+                <td>
+                    Heading, level 2.  Used for second-most important headings.
+                </td>
+                <td class="examplecode">
+                    <p>&lth2&gtI Am An Important Heading!&lt/h2&gt</p>
+                </td>
+                <td>
+                    <h2>I Am An Important Heading!</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> <span class="code">&lth3&gt</span> and <span class="code"> &lt/h3&gt</span> </p>
+                    <p> <span class="code">&lth4&gt</span> and <span class="code"> &lt/h4&gt</span> </p>
+                    <p> <span class="code">&lth5&gt</span> and <span class="code"> &lt/h5&gt</span> </p>
+                    <p> <span class="code">&lth6&gt</span> and <span class="code"> &lt/h6&gt</span> </p>
+                </td>
+                <td>
+                    <p> Heading, level 3</p>
+                    <p> Heading, level 4</p>
+                    <p> Heading, level 5</p>
+                    <p> Heading, level 6</p>
+                </td>
+                <td class="examplecode">
+                    <p>&lth3&gtI am an important heading.&lt/h3&gt</p>
+                    <p>&lth4&gtI am a heading.&lt/h4&gt</p>
+                    <p>&lth5&gtAm I a heading?&lt/h4&gt</p>
+                    <p>&lth6&gtReally? How is this a heading?&lt/h4&gt</p>
+                </td>>
+                <td>
+                    <h3>I am an important heading.</h3>
+                    <h4>I am a heading.</h4>
+                    <h5>Am I a heading?</h5>
+                    <h6>Really? How is this a heading?</h6>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> <span class="code">&ltdiv&gt</span> and <span class="code">&lt/div&gt</span></p>
+                </td>
+                <td>
+                    Divider.  Helps organize the code, both for readability and applying styles.
+                </td>
+                <td class="examplecode">
+                    <p>&ltdiv id="intro"&gt</p>
+                    <p class="indent1"> &ltp&gt This is an intro section.&lt/p&gt</p>
+                    <p class="indent1"> &ltp&gt This is another paragraph in the intro section. &lt/p&gt</p>
+                    <p>&lt/div&gt</p>
+                    <p>&ltdiv id="body1"&gt</p>
+                    <p class="indent1"> &ltp&gt We are now in the "body1" section.&lt/p&gt</p>
+                    <p>&lt/div&gt</p>
+                </td>
+                <td>
+                    <p> This is an intro section.</p>
+                    <p> This is another paragraph in the intro section.</p>
+                    <p> We are now in the "body1" section.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> <span class="code"> &ltspan&gt</span> and <span class="code"> &lt/span&gt</span></p>
+                </td>
+                <td>
+                    Span.  Same as div (above), but can be used within a paragraph.  Generally used for applying styles.
+                </td>
+                <td class="examplecode">
+                    <p>&ltp&gt This is a sentence, &ltspan style="color:red;"&gt and this part is in red&lt/span&gt.&lt/p&gt</p>
+                </td>
+                <td>
+                    <p> This is a sentence, <span style="color:red;">and this part is in red</span>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><span class="code">&lta&gt</span> and <span class="code">&lt/a&gt</span>
+                </td>
+                <td>
+                    "a" Tag.  Used with "href=" inside it to create a link.
+                </td>
+                <td class="examplecode">
+                    <p>&ltp&gtThis is a link to &lta href="https://www.google.com"&gtGoogle&lt/a&gt.&lt/p&gt</p>
+                </td>
+                <td>
+                    <p>This is a link to <a href="https://www.google.com">Google</a>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> <span class="code">&ltimg&gt</span></p>
+                </td>
+                <td>
+                    Image.  The <span class="code">src = "file_location"</span> and <span class="code">alt="Alternative text"</span> are included to indicate the image source and the alternative text (for file loading failures and screen readers), respectively.
+                </td>
+                <td class="examplecode">
+                    <p>&ltp&gtHere's a beautiful picture of clouds:&lt/p&gt</p>
+                    &ltimg src="images/clouds-4979558_1920.jpg" alt="Low clouds over a series of hills." width=100%&gt
+
+                    <p>(Other attribution code would go here.)</p>
+                </td>
+                <td>
+                    <p>Here's a beautiful picture of clouds:</p>
+                    <img src="images/clouds-4979558_1920.jpg" alt="Low clouds over a series of hills." width=100%>
+                    <p> Image by <a href="https://pixabay.com/users/fietzfotos-6795508/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4979558">Albrecht Fietz</a> from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4979558">Pixabay</a></p>
+                </td>
+            </tr>
+        </table>
     </section>
 </body>
 
