@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+        HTML and CSS Cheat Sheet
+</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            HTML and CSS Cheat Sheet
+        </h1>
+        <p class="center">
+            by Ben Wichser
+        </p>
+        <p class="left">
+            This is a reference sheet for HTML and CSS tags.  This will hopefully be both useful as a reference and also something that improves my HyperText Markup Language and Cascade Style Sheets skills.
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a href = "#htmltextbasics">
+                    HTML Text Basics
+                    </a>
+                </li>
+                <li>
+                    HTML Tables
+                </li>
+                <li>
+                    Semantic HTML
+                </li>
+                <li>
+                    HTML Forms
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="htmltextbasics">
+        <h2>
+            HTML Text Basics
+        </h2>
+        <p>
+        Here we have some basic HTML tags (commands).
+        </p>
+        <h3>
+            The Absolute Basics -- How to structure the beginning of a web page.
+        </h3>
+        <p>
+        Here are some basic HTML tags (commands).  These are the absolute basics required to create a web page.
+        </p>
+        <ol>
+            <li> Every HTML document must begin with the tag <span class="code">&lt!DOCTYPE html&gt</span>.  Then all the actual HTML (tags and text) must go between a <span class="code"> &lthtml&gt</span> and a <span class="code">&lt/html&gt</span>. That is, the web page begins with a tag that describes the document type as HTML and a tag pair that contains all the actual HTML code and text.
+            </li>
+            <li>
+                As we saw in the first item, most tags come in pairs: one tag "opens" the environment we are using, and the next tag "closes" that environment.  There are exceptions to this pairing, but this pairing is the norm for HTML tags.  (In the first item, we saw this pairing when <span class="code"> &lthtml&gt </span> and <span class="code"> &lt/html&gt </span> were used as a pair.)
+            </li>
+            <li>
+                To make a comment in HTML, we use <span class="code">&lt!</span> to start the comment, and <span class="code">--&gt</span> to end a comment.  In HTML, comments do not automatically end at the end of a line.  It is generally good form to begin a comment with <span class="code">&lt!--</span>, but the two hyphens are not required for a comment.
+            </li>
+            <li> The <span class="code">&ltheader&gt</span> and <span class="code">&lt/header&gt</span> tag pair define the web page's header.  That is, they are meant to go around meta-information for the web page.  The content you place within this tag pair will not actually appear on your web page, but may help your page render in the way you desire.  The single most common use of the page header is for the <span class="code">&lttitle&gt</span> and <span class="code">&lt/title&gt</span> tag pair.  This title tag defines your web page title, for display in your browser window or tab title.
+            </li>
+            <li>
+                The <span class="code">&ltbody&gt</span> and <span class="code">&lt/body&gt</span> tag pair define the body of your web page.  The text and HTML code you place in here will show up on your actual web page.
+            </li>
+        </ol>
+        <p>
+        The sample code below shows an extremely minimal web page, using the above HTML tags.
+        </p>
+        <div class="example">
+            <p>
+            &lt!DOCTYPE html&gt
+            </p>
+            <p>
+            &lthtml&gt
+            </p>
+            <p>
+            &nbsp &lthead&gt
+            </p>
+            <p>
+            &nbsp &nbsp  &lttitle&gt
+            </p>
+            <p>
+            &nbsp &nbsp &nbsp Simple Web Page
+            </p>
+            <p>
+            &nbsp &nbsp &lt/title&gt
+            </p>
+            <p>
+            &nbsp &nbsp &lt!-- This is a comment.  The title above puts "Simple Web Page" in the browser title bar or browser tab title. --&gt
+            </p>
+            <p>
+            &nbsp &lt/head&gt
+            </p>
+            <p>
+            &nbsp &ltbody&gt
+            </p>
+            <p>
+            &nbsp &nbsp This little bit of text goes on the actual web page.
+            </p>
+            <p>
+            &nbsp &nbsp &lt!-- This is another comment...
+            </p>
+            <p>
+            &nbsp &nbsp ...new line...still a comment...
+            </p>
+            <p>
+            &nbsp &nbsp ...still a comment...
+            </p>
+            <p>
+            &nbsp &nbsp ...comment ends here.  --&gt
+            </p>
+            <p>
+            &nbspj&lt/body&gt
+            </p>
+            <p>
+            &lt/html&gt
+            </p>
+        </div>
+        <p>
+            You may notice that there is some paired indenting in the example above.  The indenting is just a common style preference -- indenting is not required to make the HTML display accurately.  We can also notice that all of the tags in the example above come in pairs, except the initial tag ( <span class="code">&lt!DOCTYPE html&gt</span>) at the beginning of the document.
+        </p>
+    </section>
+</body>
+
+
+</html>
